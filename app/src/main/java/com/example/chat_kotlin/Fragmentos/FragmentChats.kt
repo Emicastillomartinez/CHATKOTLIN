@@ -1,23 +1,24 @@
-package com.example.chat_kotlin.Fragmentos;
+package com.example.chat_kotlin.Fragmentos
 
-import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
-import com.example.chat_kotlin.R;
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import com.example.chat_kotlin.R
+import com.example.chat_kotlin.R.layout.fragment_chats
 
 
-public class FragmentChats extends Fragment {
+class FragmentChats : Fragment() {
 
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_chats2, container, false);
+        return inflater.inflate(fragment_chats, container, false)
     }
+
+
+
 }
